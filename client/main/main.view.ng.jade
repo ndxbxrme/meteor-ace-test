@@ -1,0 +1,4 @@
+select(ng-model='docid')
+  option(ng-repeat='doc in documents', value='{{doc._id}}') {{doc.name}}
+br
+editor(docid='{{docid}}')
